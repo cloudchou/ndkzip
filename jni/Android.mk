@@ -32,11 +32,13 @@ LOCAL_SRC_FILES := \
           zip/zip.c \
           zip/zipfile.c \
           zip/zipup.c 
-TARGET_FORMAT_STRING_CFLAGS := 
+TARGET_FORMAT_STRING_CFLAGS :=  
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/zip
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/zip
-LOCAL_CFLAGS += -Wno-error=format-security -DANDROID -DUNIX -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H
+LOCAL_CFLAGS += -Wno-error=format-security -DANDROID -DUNIX -DBZIP2_SUPPORT \
+                                      -DUIDGID_NOT_16BIT -DHAVE_DIRENT_H \
+                                      -DHAVE_TERMIOS_H -g
 LOCAL_MODULE := zip 
 LOCAL_LDFLAGS += -static
 LOCAL_STATIC_LIBRARIES := bz

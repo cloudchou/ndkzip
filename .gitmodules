@@ -1,7 +1,0 @@
-[submodule "jni/zip"]
-	path = jni/zip
-	url = git@gitlab.shuame.org:zhouyaoyun/zip.git
-[submodule "jni/bzip2"]
-	path = jni/bzip2
-	url = git@gitlab.shuame.org:zhouyaoyun/bzip2.git
-	branch = cm-10.1
